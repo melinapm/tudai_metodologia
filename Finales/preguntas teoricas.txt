@@ -1,0 +1,83 @@
+que es scrum
+que es sprint 
+que es sprint retrospective
+que se hace en la daily scrum
+que es el product backlog
+que es una user storie
+ejemplo user storie como esta formada
+como esta formado el caso de uso
+scrum master como es el rol como impacta en el proyecto
+template de user storie
+qué es uml
+porque es necesario utilizar una metodología de desarrollo de software
+para qué sirve uml
+para qué sirve el analisis
+cual es el objetivo del diagrama de transición de estados en UML
+para que se usa un diagrama de actividades? que permite modelar?
+describa el objetivo del diagrama de deployment
+en qué situación es necesario construir un diagrama de transición de estados
+porque es necesario un scrum master en un equipo scrum
+cual es el objetivo del sprint retrospective. Enumere los distintos detalles que aborda.
+explique el template de una user story indicando porque es util cada parte de la misma
+por que considera que realizar entregas del software funcionando cada cierto periodo corto es tan importante
+
+
+
+
+
+
+
+
+Final Introducción a las Metodologías de Desarrollo de Software
+11 de Agosto. Tiempo de examen 60 minutos.
+1. Se está comenzando a desarrollar un proyecto que cuenta con un número elevado y complejo de casos de uso. ¿Qué circunstancias deberían darse para utilizar un ciclo de vida en cascada, en lugar de uno iterativo e incremental?
+
+Debería ser un sistema para una maquina especifica que siempre funcione de la misma manera como un respirador o un llavero eléctrico. De todas maneras el ciclo en casca es completamente obsoleto ya que el iterativo e incremental hace más fácil el desarrollo del software y nos permite mostrar al cliente como se va desarrollando el producto y ver si este satisface sus necesidades.
+
+2. ¿Por qué es necesario utilizar una metodología de desarrollo de software?
+
+No solo que es necesario si no que si nos ponemos a analizar lo que ya hicimos seguramente seguimos algún tipo de metodología. La metodología es fundamental para la organización del trabajo y la distribución de las responsabilidades. Scrum, la metodología ágil utilizada en esta cátedra, nos provee un marco de trabajo fácil de aprender pero difícil de implementar a rajatabla.
+
+3. Cuando quiero modelar la interacción entre objetos ¿qué diagrama UML debo utilizar? Describa en qué consiste y cómo se modela.
+
+Utilizo el diagrama de secuencia ya que muestra la mecánica de la interacción con base en tiempos. 
+Rol de clases: Describe la manera en que un objeto se va a comportar.
+Activaciones: Representan el tiempo que un objeto necesita para realizar una tarea determinada.
+Mensajes: Que son flechas que representan comunicaciones entre objetos.
+Linea de vida: Es la linea punteada que representa el tiempo de vida del objeto.
+Destrucción: Un objeto puede ser destruido se envía el tag «Destruir»
+Loop: Es un cuadro que nos permite representar un while, if, for o loop. Estos pueden ser ALT, OPT y LOOP.
+
+4. ¿Qué significa que un evento sea Time-boxed en Scrum?
+Los eventos de Scrum como Sprint Planning, Sprint, Daily Scrum están enmarcados por tiempo. El evento debe terminar tan pronto como se alcance el objetivo del evento o si el tiempo se termina.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[20:43, 30/7/2021] +54 9 2494 32-6609: Que es una metodologia de software
+[20:43, 30/7/2021] +54 9 2494 32-6609: Y desp me pidieron de q qria hablar
+[20:43, 30/7/2021] +54 9 2494 32-6609: Arranque con scrum
+[20:43, 30/7/2021] +54 9 2494 32-6609: Y como que cada uno te tira una pregunta
+[20:44, 30/7/2021] +54 9 2494 32-6609: Y eso que te dije
+[20:44, 30/7/2021] +54 9 2494 32-6609: Que diagramas usarías para cada etapa
+[20:44, 30/7/2021] +54 9 2494 32-6609: Algo asi
+[20:44, 30/7/2021] +54 9 2494 32-6609: Pero eso por la cursada
+[20:45, 30/7/2021] +54 9 2494 32-6609: Le hacen caso a eso que temas dieron cuando la cursaste
+[20:45, 30/7/2021] +54 9 2494 32-6609: Que es UML

@@ -1,0 +1,116 @@
+Nombre de Caso de uso: Reservar Cabaña
+
+Actor Primario: Pasajero
+
+Actores secundarios: --
+
+Trigger: El caso de uso comienza cuando el pasajero quiere reservar una cabaña.
+
+Flujo básico:
+
+1. El pasajero indica que quiere reservar una cabaña.
+2. El sistema le solicita al pasajero la fecha de ingreso y egreso en la cual desea hospedarse. 
+3. El pasajero ingresa la fecha de ingreso y egreso en la cual desea hospedarse. 
+4. El sistema le solicita al pasajero la cantidad de pasajeros. 
+5. El pasajero ingresa la cantidad de pasajeros. 
+6. El sistema busca las cabañas disponibles. 
+7. El sistema muestra un listado con el nombre de las cabañas disponibles. 
+8. El pasajero selecciona una cabaña. 
+9. PE 
+10. El sistema le solicita al pasajero nombre. 
+11. El pasajero ingresa su nombre. 
+12. El sistema le solicita al pasajero apellido. 
+13. El pasajero ingresa su apellido. 
+14. El sistema le solicita al pasajero DNI 
+15. El pasajero ingresa su DNI. 
+16. El sistema le solicita al pasajero ciudad de origen. 
+17. El pasajero ingresa su ciudad de origen. 
+18. Por cada acompañante: 
+18.1 El sistema le solicita al pasajero el nombre del acompañante. 
+18.2 El sistema le solicita al pasajero la edad del acompañante. 
+Fin iteración. 
+19. El sistema le solicita al pasajero si va a asistir con vehiculo.
+20. El pasajero ingresa si va a asistir con vehiculo. 
+21. El sistema almacena la reserva de la cabaña. 
+22. Fin de caso de uso. 
+
+Flujos alternativos: (en realidad no va porque no lo menciona el enunciado)
+6 El sistema no encuentra cabañas disponibles.
+6.1 El sistema le informa la situación al pasajero. 
+6.2 El caso de uso finaliza. 
+
+Nombre de Caso de uso: Ver características cabaña
+
+Actor Primario: Pasajero
+
+Actores secundarios: --
+
+Trigger: El caso de uso comienza cuando el pasajero quiere ver las características de una cabaña.
+
+Flujo básico:
+
+1. El pasajero indica que quiere ver las características de una cabaña. 
+2. El sistema le muestra al pasajero la cantidad de camas que posee la cabaña. 
+3. El sistema le muestra al pasajero la cantidad de ambientes que posee la cabaña. 
+4. El sistema le muestra al pasajero los servicios que tiene la cabaña. 
+5. El sistema le muestra al pasajero la ubicación dentro del predio de la cabaña  
+6. El sistema le muestra al pasajero el precio por día de la cabaña. 
+7. Fin de caso de uso. 
+
+Relaciones: Extiende el caso de uso Reservar cabaña en el punto de extensión PE cuando se cumple la condición quiere ver características. 
+
+
+Nombre de Caso de uso: Pagar reserva
+
+Actor Primario: Pasajero
+
+Actores secundarios: Depto. Contable
+
+Trigger: El caso de uso comienza cuando el pasajero quiere pagar una reserva.
+
+Flujo básico:
+
+1. El pasajero indica que quiere pagar una reserva. 
+2. El sistema le solicita al pasajero el DNI. 
+3. El pasajero ingresa el DNI. 
+4. El sistema controla que el pasajero tenga una reserva realizada. 
+5. El sistema muestra los datos de la reserva del pasajero (fecha de ingreso y egreso y cantidad de pasajeros). 
+6. [INCLUDE] Ver características cabaña. 
+7. El sistema calcula el monto total a pagar. 
+8. El sistema muestra el monto total a pagar. 
+9. El sistema solicita al pasajero que indique si paga el total o una parte de la reserva. 
+10. El pasajero ingresa que desea pagar el total. 
+11. El sistema muestra los datos de la cuenta bancaria a la cual deberá hacer la transferencia de dinero. 
+12. El sistema envía la información (DNI, nombre y apellido y monto total) al departamento contable. 
+13. El sistema registra el pago. 
+14. Fin de caso de uso. 
+
+Flujos alternativos: 
+4 El pasajero no posee una reserva realizada. 
+4.1 El sistema informa la situación al pasajero. 
+4.2 El caso de uso finaliza. 
+
+10 El pasajero ingresa que desea pagar una parte del monto.
+10.1 El sistema solicita el monto a abonar. 
+10.2 El pasajero ingresa el monto a abonar. 
+10.3 El sistema verifica que el monto no sea inferior al 30% del monto total. 
+10.4 El sistema muestra los datos de la cuenta bancaria a la cual deberá hacer la transferencia de dinero. 
+10.5 El flujo sigue en el paso 13. 
+
+10.3 El monto ingresado es inferior al 30% del monto total.
+10.3.1 El sistema informa que el monto ingresado no es válido. 
+10.3.2 El caso de uso finaliza. 
+
+Relaciones: Incluye el caso de uso Ver características cabaña. 
+
+
+
+
+
+
+
+
+
+
+
+
